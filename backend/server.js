@@ -26,6 +26,10 @@ app.use('/api/tickets', ticketRoutes);
 const faqRoutes = require('./routes/faqs');
 app.use('/api/faqs', faqRoutes);
 
+// User preferences routes (Phase 3)
+const preferencesRoutes = require('./routes/preferences');
+app.use('/api/preferences', preferencesRoutes);
+
 // A/B Testing routes (Phase 4)
 const abTestRoutes = require('./routes/ab-tests');
 app.use('/api/ab-tests', abTestRoutes);
